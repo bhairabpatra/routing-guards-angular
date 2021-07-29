@@ -1,0 +1,57 @@
+body {
+  background-color: #a2dfe0
+}
+
+
+
+.card {
+  background-color: #ffffff;
+  padding:5px;
+  border: 1px solid #eee
+}
+
+.inner-card {
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+
+  img{
+
+    width: 50%;
+    height: auto;
+    margin: 0px auto;
+  }
+}
+
+.heart {
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #beb4aa;
+  border-radius: 50%;
+  background-color: #eee
+}
+
+.btn:focus {
+  color: #fff;
+  background-color: #025ce2;
+  border-color: #0257d5;
+  box-shadow: none
+}
+
+.action_btn{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.pro_deatils{
+      display: grid;
+      grid-template-columns:repeat(2, 1fr);
+      grid-gap: 1rem;
+      margin-top: 100px;
+}

@@ -1,0 +1,29 @@
+<p> from component1
+  {{user}}
+  </p>
+  <input [(ngModel)]="newUser"/>
+  <button (click)="editedUser();">Change</button>
+
+
+
+
+
+<nav class="navbar navbar-light bg-faded">
+
+  <ul class="nav ">
+    <li class="nav-item"
+        [routerLinkActive]="['active']">
+      <a class="nav-link"
+         [routerLink]="['tracks']">Tracks
+      </a>
+    </li>
+    <li class="nav-item"
+        [routerLinkActive]="['active']">
+      <a class="nav-link"
+         [routerLink]="['albums']">Albums
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,31 @@
+
+<div class="container px-0 bg-light mx-auto py-5">
+
+  <div class="">
+
+      <div id="topnavbar">
+          <div class="topnav mb-3">
+              <div class="d-flex px-1">
+                 <a  [routerLink]="['add']"  [routerLinkActive]="['active']"    >Add Prodcuts</a>
+                 <!-- <a href="#news">users</a>
+                 <a href="#contact">company<span class="px-1">&</span>mid</a> -->
+                 <a  [routerLink]="['update']"  [routerLinkActive]="['active']"   >update</a>
+
+                 <a  [routerLink]="['user']"  [routerLinkActive]="['active']"   >User</a>
+          </div>
+
+          <!-- <div class="d-flex align-items-center mb-3 px-md-3 px-2">
+              <span class="text-uppercase fs13 fw-bolder pe-3 mr-2">search<span class="ps-1">by</span></span>
+              <form class="example d-flex align-items-center">
+                  <input type="text" placeholder="Type in Company Name Or Mid id" name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+          </div> -->
+
+          <router-outlet></router-outlet>
+
+
+
+      </div>
+  </div>
+</div>

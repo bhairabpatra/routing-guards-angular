@@ -1,0 +1,27 @@
+
+
+<div class="container">
+  <h2>All  Users</h2>
+  <p></p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>username</th>
+        <th>email</th>
+        <th>name</th>
+        <th>address</th>
+        <th>Phone</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let user of allUser">
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.name.firstname + " " + user.name.lastname}}</td>
+        <td>{{user.address.city}}</td>
+        <td>{{user.phone}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

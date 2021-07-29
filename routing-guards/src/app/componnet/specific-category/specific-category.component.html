@@ -1,0 +1,32 @@
+<div class="container">
+<div id="products">
+  <h2 class="py-3"> {{cateogory_param}} </h2>
+  <div class="row mx-0" >
+      <div class="col-lg-4 col-md-6 mb-2" *ngFor="let product of productdetails">
+
+          <div class="card d-flex flex-column align-items-center">
+              <div class="product-name text-center">  {{  product.title.slice(0, 20) }} ...</div>
+              <div class="card-img"> <img [src]= product.image alt=""> </div>
+              <div class="card-body pt-5">
+                  <div class="text-muted text-center mt-auto">Available Colors</div>
+
+                  <div class="d-flex align-items-center price">
+                      <div class="del mr-2"><span class="text-dark">5500 uah</span></div>
+                      <div class="font-weight-bold">Rs. {{product.price}} </div>
+                  </div>
+              </div>
+
+               <div class="row">
+                <a [routerLink]="['/app-product', product.id]">
+                <button class="btn  btn-sm btn-primary p-1">Add to Cart</button>
+                </a>
+               </div>
+
+          </div>
+
+      </div>
+
+
+  </div>
+</div>
+</div>
